@@ -1,6 +1,6 @@
 add_executable(cubic_bezier_splines_visualizer_demo WIN32 source/main.c)
 target_compile_options(cubic_bezier_splines_visualizer_demo PRIVATE ${CBSV_COMPILE_OPTIONS})
-target_link_options(cubic_bezier_splines_visualizer_demo PRIVATE -static)
+target_link_options(cubic_bezier_splines_visualizer_demo PRIVATE ${CBSV_LINK_OPTIONS})
 target_link_libraries(cubic_bezier_splines_visualizer_demo PRIVATE cubic_bezier_splines_visualizer)
 
 
